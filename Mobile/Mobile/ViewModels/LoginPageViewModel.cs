@@ -43,7 +43,7 @@ namespace Mobile.ViewModels
             }
 
             
-            await App.Current.MainPage.DisplayAlert("You in!", "Welcome to adventure!", "Ok");
+            await App.Current.MainPage.DisplayAlert("You are in!", "Welcome to adventure!", "Ok");
         }
     }
 }
