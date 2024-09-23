@@ -1,16 +1,18 @@
-﻿namespace Mobile.Models;
-
-public class ProductResponse
+﻿namespace Mobile.Models
 {
-    public int Id { get; set; }
-    public string Name { get; set; }
-    public float Price { get; set; }
-    public string Imagerl { get; set; }
-    public object LastPurchase { get; set; }
-    public object LastSale { get; set; }
-    public bool IsAvailable { get; set; }
-    public float Stock { get; set; }
-    public UserResponse User {get, set; }
-    public string ImageFullPath { get; set; }
+
+    public class ProductResponse
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public float Price { get; set; }
+        public string Imagerl { get; set; }
+        public object LastPurchase { get; set; }
+        public object LastSale { get; set; }
+        public bool IsAvailable { get; set; }
+        public float Stock { get; set; }
+        public UserResponse User { get; set; }
+        public string ImageFullPath { get; set; }
+    }
 }
 

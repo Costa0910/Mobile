@@ -20,7 +20,7 @@ namespace Mobile
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/LoginPage");
+            await NavigationService.NavigateAsync("NavigationPage/ProductsPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
