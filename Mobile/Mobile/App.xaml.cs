@@ -1,3 +1,4 @@
+using Mobile.Services;
 using Mobile.ViewModels;
 using Mobile.Views;
 using Prism;
@@ -25,6 +26,7 @@ namespace Mobile
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterSingleton<IAppInfo, AppInfoImplementation>();
+            containerRegistry.RegisterSingleton<IAPIService, APIService>();
 
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>();

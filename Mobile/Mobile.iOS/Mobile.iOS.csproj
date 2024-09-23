@@ -188,6 +188,9 @@
     <BundleResource Include="Resources\LaunchIcon%402x.png" />
     <BundleResource Include="Resources\LaunchIcon%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <BundleResource Include="Resources\Icon-App-20x20%401x.png" />
+    <BundleResource Include="Resources\Icon-App-20x20%402x.png" />
+    <BundleResource Include="Resources\Icon-App-20x20%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -205,7 +208,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Mobile\Mobile.csproj">
-      <Project>{A682884C-CB44-4A89-B752-27BB634E0ABE}</Project>
+      <Project>{26655E31-47F0-44C5-BF8A-6B4333A1E890}</Project>
       <Name>Mobile</Name>
     </ProjectReference>
   </ItemGroup>
