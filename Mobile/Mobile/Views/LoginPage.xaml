@@ -7,7 +7,7 @@
 
     <StackLayout Padding="10">
         <Label Text="Email" />
-        <Entry Text="{Binding Email}" Placeholder="Enter your email" />
+        <Entry Text="{Binding Email}" Placeh older="Enter your email" />
         <Label Text="Password" />
         <Entry Text="{Binding Password}" IsPassword="True" Placeholder="Enter your password" />
         <ActivityIndicator IsRunning="{Binding IsRunning}" VerticalOptions="CenterAndExpand" />
