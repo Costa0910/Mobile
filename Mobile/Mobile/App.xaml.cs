@@ -3,6 +3,7 @@ using Mobile.ViewModels;
 using Mobile.Views;
 using Prism;
 using Prism.Ioc;
+using Syncfusion.Licensing;
 using Xamarin.Essentials.Implementation;
 using Xamarin.Essentials.Interfaces;
 using Xamarin.Forms;
@@ -18,6 +19,7 @@ namespace Mobile
 
         protected override async void OnInitialized()
         {
+            SyncfusionLicenseProvider.RegisterLicense("Your syncfusion Key here");
             InitializeComponent();
 
             await NavigationService.NavigateAsync("NavigationPage/ProductsPage");

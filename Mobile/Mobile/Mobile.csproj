@@ -10,6 +10,7 @@
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2291" />
     <PackageReference Include="Xamarin.Essentials.Interfaces" Version="1.7.0" />
     <PackageReference Include="Prism.DryIoc.Forms" Version="8.1.97" />
+    <PackageReference Include="Syncfusion.Xamarin.SfBusyIndicator" Version="27.1.50" />
   </ItemGroup>
 
   <ItemGroup>
