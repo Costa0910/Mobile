@@ -5,7 +5,7 @@
              x:Class="Mobile.App">
   <Application.Resources>
 
-    <!-- Application resource dictionary -->
+     <!--Application resource dictionary--> 
 
       <ResourceDictionary>
           <!--Parameters-->

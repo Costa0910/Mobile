@@ -1,4 +1,5 @@
-﻿using Mobile.Models;
+﻿using Mobile.ItemViewModels;
+using Mobile.Models;
 using Mobile.Services;
 using Prism.Commands;
 using Prism.Navigation;
@@ -15,13 +16,13 @@ namespace Mobile.ViewModels
 	{
         private bool _isRunning;
         private readonly IAPIService _apiService;
-        private ObservableCollection<ProductResponse> _products;
+        private ObservableCollection<ProductItemViewModel> _products;
         private INavigationService _navigationService { get; }
         private string _query;
         private List<ProductResponse> _myProducts;
         private DelegateCommand _queryCommand;
 
-        public ObservableCollection<ProductResponse> Products
+        public ObservableCollection<ProductItemViewModel> Products
         {
             get => _products;
             set => SetProperty(ref _products, value);
@@ -82,11 +83,35 @@ namespace Mobile.ViewModels
         {
             if (string.IsNullOrEmpty(Query))
             {
-                Products = new ObservableCollection<ProductResponse>(_myProducts);
+                Products = new ObservableCollection<ProductItemViewModel>(_myProducts.Select(p =>new ProductItemViewModel(_navigationService) {
+                    Name = p.Name,
+                    Id = p.Id,
+                    Price = p.Price,
+                    ImageFullPath = p.ImageFullPath,
+                    LastPurchase = p.LastPurchase,
+                    LastSale = p.LastSale,
+                    IsAvailable = p.IsAvailable,
+                    Stock = p.Stock,
+                    User = p.User,
+                    ImageUrl = p.ImageUrl
+                }).ToList());
             } else
             {
-                Products = new ObservableCollection<ProductResponse>(_myProducts
-                    .Where(p => p.Name.ToLower().Contains(Query.ToLower())));
+                Products = new ObservableCollection<ProductItemViewModel>(_myProducts
+                    .Where(p => p.Name.ToLower()
+                    .Contains(Query.ToLower()))
+                    .Select(p => new ProductItemViewModel(_navigationService) {
+                        Name = p.Name,
+                        Id = p.Id,
+                        Price = p.Price,
+                        ImageFullPath = p.ImageFullPath,
+                        LastPurchase = p.LastPurchase,
+                        LastSale = p.LastSale,
+                        IsAvailable = p.IsAvailable,
+                        Stock = p.Stock,
+                        User = p.User,
+                        ImageUrl = p.ImageUrl
+                    }).ToList());
             }
         }
     }

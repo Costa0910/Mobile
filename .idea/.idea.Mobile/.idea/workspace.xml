@@ -9,11 +9,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="301fb7a6-9c9c-4424-9e95-e0c514581b60" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile/Mobile.Android/Mobile.Android.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile/Mobile.Android/Mobile.Android.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile/Mobile.iOS/Mobile.iOS.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile/Mobile.iOS/Mobile.iOS.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile/Mobile/App.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile/Mobile/App.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile/Mobile/App.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile/Mobile/App.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mobile/Mobile/Mobile.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile/Mobile/Mobile.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile/Mobile/Views/LoginPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile/Mobile/Views/LoginPage.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile/Mobile/ViewModels/ProductDetailsPageViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile/Mobile/ViewModels/ProductDetailsPageViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile/Mobile/Views/ProductDetailsPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile/Mobile/Views/ProductDetailsPage.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile/Mobile/Views/ProductsPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile/Mobile/Views/ProductsPage.xaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +114,7 @@
       <updated>1727099172377</updated>
       <workItem from="1727099177365" duration="452000" />
       <workItem from="1727108574524" duration="63000" />
+      <workItem from="1727205297522" duration="66000" />
     </task>
     <servers />
   </component>
