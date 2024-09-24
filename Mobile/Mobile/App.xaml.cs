@@ -30,7 +30,7 @@ namespace Mobile
             containerRegistry.RegisterSingleton<IAppInfo, AppInfoImplementation>();
             containerRegistry.RegisterSingleton<IAPIService, APIService>();
 
-            containerRegistry.RegisterForNavigation<ProductsPage, ProductsPageViewModel>(); containerRegistry.RegisterForNavigation<NavigationPage>();
+            containerRegistry.RegisterForNavigation<ProductDetailsPage, ProductDetailsPageViewModel>(); containerRegistry.RegisterForNavigation<ProductsPage, ProductsPageViewModel>(); containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>();
         }
     }
