@@ -5,7 +5,9 @@
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              xmlns:i18n="clr-namespace:Mobile.Helpers"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="Mobile.Views.ProductDetailsPage" Title="{Binding Title}">
+             x:Class="Mobile.Views.ProductDetailsPage"
+             Title="{Binding Title}"
+             BackgroundColor="{StaticResource ColorBackground}">
 
     <ScrollView>
         <StackLayout Padding="10">
@@ -18,87 +20,95 @@
                 HeightRequest="200"
                 WidthRequest="200" />
 
-  <Grid Padding="10">
-      <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="Auto" />
-          <ColumnDefinition Width="*" />
-      </Grid.ColumnDefinitions>
-      <Grid.RowDefinitions>
-          <RowDefinition Height="Auto" />
+    <Grid Padding="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
-      </Grid.RowDefinitions>
-      <Label
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Label
         Grid.Row="0"
           Grid.Column="0"
           Text="{i18n:Translate Name}"
           FontAttributes="Bold" />
 
-      <Label
+        <Label
         Grid.Row="0"
           Grid.Column="1"
           Text="{Binding Product.Name}" />
 
-      <Label
+        <Label
         Grid.Row="1"
           Grid.Column="0"
           Text="{i18n:Translate Price}"
           FontAttributes="Bold" />
-      <Label
+        <Label
         Grid.Row="1"
           Grid.Column="1"
           Text="{Binding Product.Price, StringFormat='{0:C2}'}" />
 
 
-      <Label
+        <Label
 Grid.Row="2"
 Grid.Column="0"
 FontAttributes="Bold"
 Text="{i18n:Translate LastPurchase}" />
-<Label
+        <Label
 Grid.Row="2"
 Grid.Column="1"
 Text="{Binding Product.LastPurchase}" />
-<Label
+        <Label
 Grid.Row="3"
 Grid.Column="0"
 FontAttributes="Bold"
 Text="{i18n:Translate LastSale}" />
-<Label
+        <Label
 Grid.Row="3"
 Grid.Column="1"
 Text="{Binding Product.LastSale}" />
-<Label
+        <Label
 Grid.Row="4"
 Grid.Column="0"
 FontAttributes="Bold"
 Text="{i18n:Translate IsAvailable}"
 VerticalOptions="Center" />
-<CheckBox
+        <CheckBox
 Grid.Row="4"
 Grid.Column="1"
 HorizontalOptions="Start"
 IsChecked="{Binding Product.IsAvailable}"
 IsEnabled="False" />
-<Label
+        <Label
 Grid.Row="5"
 Grid.Column="0"
 FontAttributes="Bold"
 Text="{i18n:Translate Stock}" />
-<Label
+        <Label
 Grid.Row="5"
 Grid.Column="1"
 Text="{Binding Product.Stock, StringFormat=' {0:N2}'}" />
 
 
-  </Grid>          
+    </Grid>
 
-        </StackLayout>
+    <Button
+BackgroundColor="Navy"
+Command="{Binding AddToCartBinding}"
+CornerRadius="10"
+Text="{i18n:Translate AddToCart}"
+TextColor= "White"
+VerticalOptions="EndAndExpand" />
+
+    </StackLayout>
 
     </ScrollView>
-  
-</ContentPage>
+
+    </ContentPage>
