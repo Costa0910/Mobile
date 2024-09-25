@@ -48,7 +48,7 @@
             {
                 _navigationService = navigationService;
                 _apiService = apiService;
-                Title = "Products page";
+                Title = Languages.Products;
                 LoadProductsAsync();
             }
 

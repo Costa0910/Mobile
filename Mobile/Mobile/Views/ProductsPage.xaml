@@ -14,7 +14,7 @@
 AbsoluteLayout.LayoutFlags="All"
 Padding="5">
     <SearchBar
-Placeholder="Search product..."
+Placeholder="{i18n:Translate SearchProduct}"
 SearchCommand="{Binding QueryCommand}"
 Text="{Binding Query}" />
 
@@ -47,9 +47,16 @@ VerticalOptions="Center">
 <Label Text="{Binding Name}"
 FontAttributes="Bold" FontSize="Medium"
 LineBreakMode="TailTruncation" />
-<Label Text="{Binding Price, StringFormat='Price: {0:C2}'}"
-FontAttributes="Italic"
-VerticalOptions="End" />
+<Label FontAttributes="Italic" VerticalOptions="End">
+    <Label.FormattedText>
+           <FormattedString>
+               <Span Text="{i18n:Translate Price}" />
+               <Span Text="{Binding Price, StringFormat=': {0:C2}'}" />
+           </FormattedString>
+
+       </Label.FormattedText>
+
+</Label>
 <Label Text="{Binding Stock, StringFormat='Stock: {0:N2}'}" FontAttributes="Italic" VerticalOptions="End" />
 </StackLayout>
 <Image Grid.Column="2"
@@ -61,7 +68,7 @@ Source="ic_more_vert" />
             </StackLayout>
 
         <busyindicator:SfBusyIndicator
-                    Title="Loading..."
+                    Title="{i18n:Translate Loading}"
                     AbsoluteLayout.LayoutBounds=".5,.5,.5,.5"
                     AbsoluteLayout.LayoutFlags="All" AnimationType="Gear"
                     BackgroundColor="Silver"
