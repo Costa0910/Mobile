@@ -32,7 +32,8 @@
     <ColumnDefinition Width="Auto" />
     <ColumnDefinition Width="*" />
     <ColumnDefinition Width="Auto" />
-    </Grid.ColumnDefinitions> <ffimageloading:CachedImage Grid.Column="0"
+    </Grid.ColumnDefinitions>
+        <ffimageloading:CachedImage Grid.Column="0"
     Aspect="AspectFill"
     Source="{Binding ImageFullPath}"
     CacheDuration="50"
