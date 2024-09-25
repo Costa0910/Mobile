@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:i18n="clr-namespace:Mobile.Helpers"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="Mobile.Views.ProductDetailsPage" Title="{Binding Title}">
 
@@ -34,7 +35,7 @@
       <Label
         Grid.Row="0"
           Grid.Column="0"
-          Text="Name"
+          Text="{i18n:Translate Name}"
           FontAttributes="Bold" />
 
       <Label
@@ -45,7 +46,7 @@
       <Label
         Grid.Row="1"
           Grid.Column="0"
-          Text="Price"
+          Text="{i18n:Translate Price}"
           FontAttributes="Bold" />
       <Label
         Grid.Row="1"
@@ -57,7 +58,7 @@
 Grid.Row="2"
 Grid.Column="0"
 FontAttributes="Bold"
-Text="Last Purchase" />
+Text="{i18n:Translate LastPurchase}" />
 <Label
 Grid.Row="2"
 Grid.Column="1"
@@ -66,7 +67,7 @@ Text="{Binding Product.LastPurchase}" />
 Grid.Row="3"
 Grid.Column="0"
 FontAttributes="Bold"
-Text="Last Sale" />
+Text="{i18n:Translate LastSale}" />
 <Label
 Grid.Row="3"
 Grid.Column="1"
@@ -75,7 +76,7 @@ Text="{Binding Product.LastSale}" />
 Grid.Row="4"
 Grid.Column="0"
 FontAttributes="Bold"
-Text="IsAvailable"
+Text="{i18n:Translate IsAvailable}"
 VerticalOptions="Center" />
 <CheckBox
 Grid.Row="4"
