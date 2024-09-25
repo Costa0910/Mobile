@@ -19,6 +19,14 @@ namespace Mobile.Helpers
         public static string Accept => Resource.Accept;
         public static string ConnectionError => Resource.ConnectionError;
         public static string Error => Resource.Error;
+        public static string Name => Resource.Name;
+
+        public static string Product => Resource.Product;
+        public static string Products => Resource.Products;
+        public static string Price => Resource.Price;
+        public static string AddToCart => Resource.AddToCart;
+        public static string Loading => Resource.Loading;
+        public static string SearchProduct => Resource.SearchProduct;
     }
 }
 
