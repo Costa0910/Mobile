@@ -88,11 +88,11 @@ IsEnabled="False" />
 Grid.Row="5"
 Grid.Column="0"
 FontAttributes="Bold"
-Text="Stock" />
+Text="{i18n:Translate Stock}" />
 <Label
 Grid.Row="5"
 Grid.Column="1"
-Text="{Binding Product.Stock, StringFormat='{0:N2}'}" />
+Text="{Binding Product.Stock, StringFormat=' {0:N2}'}" />
 
 
   </Grid>          
