@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Mobile.Interfaces
 {
-    interface ILocalize
+    public interface ILocalize
     {
         CultureInfo GetCurrentCultureInfo();
         void SetLocale(CultureInfo ci);
