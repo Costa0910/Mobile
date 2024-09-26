@@ -34,7 +34,7 @@ namespace Mobile.ViewModels
                 {
                     Title = Languages.Products,
                     PageName = $"{nameof(ProductsPage)}",
-                    Icon = "ic_shopping_cart"
+                    Icon = "ic_shopping"
                 },
                 new Menu
                 {
@@ -62,6 +62,16 @@ namespace Mobile.ViewModels
                     Icon = "ic_exit_to_app"
                 },
             };
+
+            Menus = new ObservableCollection<MenuItemViewModel> (
+                menus.Select(m => new MenuItemViewModel(_navigationService)
+                {
+                    Icon = m.Icon,
+                    Title = m.Title,
+                    IsLoginRequired = m.
+                    IsLoginRequired,
+                    PageName = m.PageName
+                }).ToList());
         }
     }
 }
