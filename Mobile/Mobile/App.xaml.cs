@@ -35,6 +35,9 @@ namespace Mobile
             containerRegistry.RegisterForNavigation<ProductsPage, ProductsPageViewModel>();
             containerRegistry.RegisterForNavigation<ProductDetailsPage, ProductDetailsPageViewModel>();
             containerRegistry.RegisterForNavigation<MobileMasterDetailPage, MobileMasterDetailPageViewModel>();
+            containerRegistry.RegisterForNavigation<ModifyUserPage, ModifyUserPageViewModel>();
+            containerRegistry.RegisterForNavigation<ShowHistoryPage, ShowHistoryPageViewModel>();
+            containerRegistry.RegisterForNavigation<ShowCartPage, ShowCartPageViewModel>();
         }
     }
 }
