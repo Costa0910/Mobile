@@ -34,6 +34,7 @@ namespace Mobile
             containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>();
             containerRegistry.RegisterForNavigation<ProductsPage, ProductsPageViewModel>();
             containerRegistry.RegisterForNavigation<ProductDetailsPage, ProductDetailsPageViewModel>();
+            containerRegistry.RegisterForNavigation<MobileMasterDetailPage, MobileMasterDetailPageViewModel>();
         }
     }
 }
